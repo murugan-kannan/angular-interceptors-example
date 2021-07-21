@@ -1,6 +1,6 @@
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-    <div class="d-flex w-100 justify-content-between" *ngFor="let comment of comments">
+  <a href="#" class="list-group-item list-group-item-action" aria-current="true" *ngFor="let comment of comments">
+    <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{comment.name}}</h5>
       <small>{{comment.id}}</small>
     </div>

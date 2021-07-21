@@ -12,6 +12,7 @@ export class CommentsComponent implements OnInit {
   constructor(private jsonPlaceHolderService: JsonPlaceHolderService) {}
   ngOnInit(): void {
     this.jsonPlaceHolderService.getComments().subscribe(data => {
+      console.log(data);
       this.comments = data;
     });
   }
